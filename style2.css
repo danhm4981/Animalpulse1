@@ -1,0 +1,327 @@
+
+.man {
+    background-image: url('bk3.jpg');  /* الخلفية الجديدة لكل الصفحات */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Cairo", sans-serif;
+    padding-top: 40px;
+    text-align: center;
+}
+/*تنسيق النص الرئيسي للصفحات*/
+.project-name {
+    color:#edf9ff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/*index*/
+body {
+    background: url('bk.jpg') center/cover no-repeat fixed;
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    direction: rtl;
+}
+
+/* الشعار */
+.xx {
+    width: 150px;
+    margin: 120px auto 10px;
+    display: block;
+}
+
+#a {
+    font-size: 40px;
+    color: #0A3F4F;
+    margin: 5px 0;
+}
+
+#da {
+    font-size: 20px;
+    color: #1E4F5F;
+    margin-bottom: 40px;
+}
+
+/* الشبكة */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+	gap:50px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background: rgba(255,255,255,.70);
+    border-radius: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    transition: .25s;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100px;
+    height: 80px;    /* مو ضروري بس يخليها ثابتة */
+    object-fit: contain;
+}
+
+.card span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0A3F4F;   /* نفس لون الخط لكل الخانات */
+}
+.c {
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* الخط فوق العنوان */
+.line {
+    width: 80%;
+    height: 4px;
+    background: #0F4C5C;
+    margin: 0 auto 12px;
+    border-radius: 4px;
+}
+
+
+/*dan*/
+
+
+/* البطاقة */
+.clinic-card {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    direction: rtl;
+    font-family: sans-serif;
+}
+
+/* العنوان */
+.clinic-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #073b4c;
+}
+
+/* التقييم */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.star {
+    color: #f9a825; /* لون النجمة */
+    font-size: 20px;
+}
+
+/* معلومات المكان والاتصال */
+.info .row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+/* الأزرار */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary {
+    background: #2e8b8b;
+    color: white;
+}
+
+.secondary {
+    background: #1abc9c;
+    color: white;
+}
+/*الوان الروابط*/
+a:link{
+	color:blue;}
+a:visited{color:#edf9ff;}
+a:hover{color:#ffbd59;}
+
+.clinics-row {
+    display: flex !important;      /* يجبرهم يكونون جنب بعض */
+    flex-direction: row !important;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap;             /* يمنع النزول تحت بعض */
+}
+
+
+/* يجعل الكروت جنب بعض */
+.wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    direction: rtl;
+	margin-top:100px;
+}
+/*toto*/
+
+/* الصندوق */
+.contact-box {
+    width: 75%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 25px;
+    padding: 35px 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+/* العناوين */
+.contact-box h2 {
+    font-size: 28px;
+    color: #0F4C5C;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+
+/* النص */
+.contact-box p {
+    font-size: 19px;
+    color: #345B63;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* الرقم والإيميل */
+.info {
+    font-size: 20px;
+    color: #4F6F7A;
+    font-weight: bold;
+}
+
+/*AL*/
+.container {
+    width: 400px;                /* نفس عرض البوكس تقريبا */
+    margin: 120px auto 0 auto;   /* يضعه في منتصف الصفحة أفقياً وتحت الهيدر */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;         /* الحفاظ على الزوايا */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* ظل مشابه */
+    text-align: center;          /* لمحاذاة العناصر داخل البوكس */}
+	
+h1{color:#2e8b8b;}	
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 12px;
+  border: 1px solid #81a4c5;
+  outline: none;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  padding: 6px 10px;          /* قلّلتها علشان الحدود تصير أقصر */
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 2px solid #81a4c5;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+  color: #003d5c;
+  box-sizing: border-box;}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  background: #005f8e;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;}
+
+button:hover {
+  background: #004b70;}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #003d5c;}
+
+input::placeholder {
+  color: #005f8e;}
+/*we*/
+    .b {background-image: url('bk3.jpg');  /* الخلفية الجديدة لكل الصفحات */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+		min-height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;    }
+		
+    .card2 {
+        background: rgba(255, 255, 255, 0.7);
+        width: 90%;
+		max-width:400px;
+        padding: 40px 25px;
+        border-radius: 18px;
+        border: 2px solid #8bb3d9;
+        box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+        text-align: center;
+		margin-top:60px;
+		height:200;
+    }
+    .box {
+        background: #ffffff;
+	 padding: 15px;
+		margin-bottom:2px;
+        border-radius: 15px;
+        text-align: right;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		width:100%;
+		box-sizing:border-box;
+    }
+    .box h3 {
+        margin: 0 0 8px 0;
+        color: #0b537c;
+        font-size: 18px;
+    }
+    .box p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+    }
+	/*Hh*/
