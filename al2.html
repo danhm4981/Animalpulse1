@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأكيد الحجز</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body class="bnd">
+  <div class="container">
+    <h1>تم حجز موعد الحيوان بنجاح</h1>
+
+    <input type="text" id="c_name" class="centered-input" readonly placeholder="اسم الحيوان">
+    <input type="text" id="c_age" class="centered-input" readonly placeholder="العمر">
+    <input type="text" id="c_vaccines" class="centered-input" readonly placeholder="التطعيمات">
+    <input type="text" id="c_nextDate" class="centered-input" readonly placeholder="الموعد القادم">
+
+    <button onclick="goHome()">العودة للصفحة الرئيسية</button>
+  </div>
+
+  <script>
+    // جلب البيانات من localStorage مع التأكد من وجودها
+    document.getElementById("c_name").value = localStorage.getItem("name") || "";
+    document.getElementById("c_age").value = localStorage.getItem("age") || "";
+    document.getElementById("c_vaccines").value = localStorage.getItem("vaccines") || "";
+    document.getElementById("c_nextDate").value = localStorage.getItem("nextDate") || "";
+
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
